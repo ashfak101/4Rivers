@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --main-color: #ffffff;
+  --primary-color: #242424;
+  --secondary-color: #f5c801;
+  --warning-color: #84d0f4;
+  --navyblue-color:#091C30
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* common style */
+.common-btn {
+  font-size: 15px;
+  background: transparent;
+  color: var(--main-color);
+  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+}
+.head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 68px;
+}
+/* header css */
+/* header-head */
+.header-head {
+  height: 31px;
+  background-color: var(--warning-color);
+  text-align: center;
+}
+
+.header-head p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  padding: 5px 0;
+}
+/* header nav */
+.header-nav {
+  margin: 10px 0;
+}
+.header-nav ul li a {
+  color: var(--main-color) !important;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.25px;
+}
+.header-nav-side {
+  color: var(--main-color);
+}
+.header-nav-side span {
+  font-size: 12px;
+  padding-right: 12px;
+  border-right: 1.21247px solid #f9f9f9;
+}
+.header-nav-side i {
+  font-size: 18px;
+  margin: 0 10px;
+}
+.bg-banner {
+  background: url("/assets/images/banner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+/* banner */
+.banner {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h4 {
+  font-size: 61px;
+  line-height: 68px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.banner-content p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--main-color);
+}
+.banner-btn {
+  color: var(--main-color);
+  background: transparent;
+  width: 420px;
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 33px;
+  border: 1px solid var(--main-color);
+  margin: 20px 0;
+}
+.banner-btn i {
+  margin-left: 240px;
+}
+@media only screen and (max-width: 665px) {
+  .banner {
+    top: 50%;
+  }
+  .banner-content h4 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .banner-content p {
+    font-size: 12px;
+  }
+  .banner-btn {
+    width: 150px;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 10px 20px;
+  }
+  .banner-btn i {
+    margin-left: 50px;
+  }
+  .header-nav {
+    background-color: var(--primary-color) !important;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    height: 50vh;
+  }
+}
+/* Dealer NetWorl */
+.lg-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.dealer-network {
+  margin-top: -150px;
+}
+.dealer-network-content {
+  width: 370.03px;
+  background: var(--main-color);
+  height: 324px;
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.0991348);
+  border-radius: 10px;
+  margin-right: 50px;
+  padding: 20px;
+}
+.dealer-network-content:nth-child(2) {
+  background-color: #091c30;
+}
+.dealer-network-content:last-child {
+  margin-right: 20px;
+}
+.dealer-network-content h5 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.dealer-network-content-1 img {
+  width: 100%;
+  height: 100%;
+}
+.dealer-network-content-1 div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.dealer-network-content-1 a {
+  font-size: 14px;
+  color: #242424;
+  text-decoration: underline;
+}
+.dealer-network-content-2 {
+  text-align: center;
+}
+.dealer-network-content-2 img {
+  margin: 20px 0;
+}
+.dealer-network-content-2 h5 {
+  color: var(--main-color);
+  font-size: 17px;
+  margin: 10px 0;
+}
+.dealer-network-content-2 p {
+  color: var(--main-color);
+  font-size: 13px;
+}
+.dealer-network-content-3 p {
+  font-size: 14px;
+  padding: 22px 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.dealer-network-content-3 p:last-child {
+  border-bottom: none;
+}
+.dealer-network-content-3 p i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 665px) {
+  /* .dealer-network{
+
+    } */
+  .dealer-network-content {
+    width: 90%;
+    margin: 10px 20px;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .lg-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .row {
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .lg-container {
+    width: 70%;
+    margin: 0 20px;
+  }
+}
+
+/* Browse Section */
+
+.browse {
+  margin-top: 57px;
+  margin-bottom: 57px;
+}
+.browse-head {
+  display: flex;
+  justify-content: space-between;
+}
+.browse-head h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 68px;
+}
+.browse-head ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.browse-head ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+  margin: 0 10px;
+  border-bottom: 5px solid transparent;
+}
+.active {
+  border-bottom-color: #091c30 !important;
+}
+.browse-head ul li a:hover {
+  border-bottom: 5px solid var(--primary-color);
+}
+.browse-head div button {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  margin-right: 10px;
+}
+.browse-head div i {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  margin-left: 10px;
+}
+.browse-card {
+  width: 275.24px;
+  height: 352px;
+  margin-bottom: 35px;
+}
+.browse-card img{
+    width: 100%;
+}
+.browse-content h6{
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.browse-content .browse-loader{
+    display: flex;
+    justify-content: space-between;
+}
+.browse-hour{
+    display: flex;
+    margin: 10px 0;
+}
+.browse-loader h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.browse-hour h4{
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 40px;
+    color: var(--primary-color);
+}
+.browse-content p{
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.browse-footer{
+    display: flex;
+    background-color: var(--navyblue-color);
+    color: var(--main-color);
+    justify-content: space-between;
+ 
+    padding: 10px 10px;
+}
+.browse-footer h5{
+    font-size: 11.7925px;
+}
+.browse-footer-km{
+    color: var(--secondary-color);
+}
+.browse-footer-km i {
+    margin-right: 10px;
+}
