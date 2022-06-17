@@ -4,7 +4,7 @@
   --primary-color: #242424;
   --secondary-color: #f5c801;
   --warning-color: #84d0f4;
-  --navyblue-color:#091C30
+  --navyblue-color: #091c30;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -147,7 +147,7 @@ body {
   margin-top: -150px;
 }
 .dealer-network-content {
-  width: 370.03px;
+  width: 324.03px;
   background: var(--main-color);
   height: 324px;
   box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.0991348);
@@ -242,6 +242,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .browse-head h4 {
   font-style: normal;
   font-weight: 700;
@@ -269,64 +270,189 @@ body {
 .browse-head div button {
   color: var(--primary-color);
   border-color: var(--primary-color);
+  margin-right: 120px;
+}
+.browse-head div .icon {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  margin-left: 10px;
+  display: none;
+}
+@media only screen and (max-width: 665px) {
+  .browse-head {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .browse-head h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .browse-head ul li a {
+    font-size: 8px;
+  }
+  .browse-head ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+.browse-card {
+  width: 255.24px;
+  height: 352px;
+
+  margin-bottom: 35px;
+  margin-right: 20px;
+}
+.browse-card img {
+  width: 100%;
+  position: relative;
+}
+.browse-content h6 {
+  font-size: 13px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.browse-content .browse-loader {
+  display: flex;
+  justify-content: space-between;
+}
+.browse-hour {
+  display: flex;
+  margin: 10px 0;
+}
+.browse-loader h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.browse-hour h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 40px;
+  color: var(--primary-color);
+}
+.browse-content p {
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.browse-footer {
+  display: flex;
+  background-color: var(--navyblue-color);
+  color: var(--main-color);
+  justify-content: space-between;
+
+  padding: 10px 10px;
+}
+.browse-footer h5 {
+  font-size: 11.7925px;
+}
+.browse-footer-km {
+  color: var(--secondary-color);
+}
+.browse-footer-km i {
   margin-right: 10px;
 }
-.browse-head div i {
+.browse-btn {
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--main-color);
+  border: none;
+  font-size: 8px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: 10px;
+  left: 10px;
+}
+
+.dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: block;
+}
+
+.owl-nav {
+  position: absolute;
+  top: -75px;
+  right: 3px;
+}
+.icon {
   border: 1px solid var(--primary-color);
   padding: 12px;
   margin-left: 10px;
 }
-.browse-card {
-  width: 275.24px;
-  height: 352px;
-  margin-bottom: 35px;
+.circle {
+  font-size: 6px;
+  margin-right: 6px;
+  color: green;
 }
-.browse-card img{
-    width: 100%;
+.circle-2 {
+  font-size: 6px;
+  margin-right: 6px;
+  color: var(--secondary-color);
 }
-.browse-content h6{
-    font-size: 13px;
-    padding: 0 10px;
-    margin: 10px 0;
+/* ----------BRowse Ends */
+/* <!-- Tractor buying section start here --> */
+.tractors-buying-section {
+  background-color: var(--navyblue-color);
+  color: var(--main-color);
+  text-align: center;
+  padding: 67px 0;
 }
-.browse-content .browse-loader{
-    display: flex;
-    justify-content: space-between;
+.tractors-content h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 68px;
 }
-.browse-hour{
-    display: flex;
-    margin: 10px 0;
+.tractors-divider{
+  margin-bottom: 30px;
+  width: 100px;
+  height: 1px;
+  background: var(--secondary-color);
+  margin: 0 auto;
 }
-.browse-loader h4{
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--primary-color);
+.tractors-content .para {
+  width: 580px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 40px auto;
 }
-.browse-hour h4{
-    font-size: 13px;
-    font-weight: 700;
-    margin-right: 40px;
-    color: var(--primary-color);
+.tractors-feature {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
 }
-.browse-content p{
-    font-size: 13px;
-    color: var(--primary-color);
-    font-weight: 500;
+.tractors-feature-content{
+  width: 200px;
 }
-.browse-footer{
-    display: flex;
-    background-color: var(--navyblue-color);
-    color: var(--main-color);
-    justify-content: space-between;
+.tractors-feature-content h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.tractors-feature-content p {
+  font-size: 13px;
+  font-weight: 400;
  
-    padding: 10px 10px;
 }
-.browse-footer h5{
-    font-size: 11.7925px;
+@media only screen and (max-width: 665px){
+  .tractors-content h4 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .tractors-content .para {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 40px auto;
+  }
+  .tractors-feature {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+  }
 }
-.browse-footer-km{
-    color: var(--secondary-color);
-}
-.browse-footer-km i {
-    margin-right: 10px;
-}
+/* <!-- Tractor buying section ends here --> */
