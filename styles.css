@@ -788,4 +788,35 @@ body {
     line-height: 24px;
     margin: 30px 0;
   }
+  .owl-dots{
+    text-align: center;
+  }
+  .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-dots .owl-dot.actives  {
+    opacity: 1;
+    background-color: #9f2222;
+    color: var(--navyblue-color);
+}
+@media only screen and (max-width: 665px){
+  .testimonials-content h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .testimonials-content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 30px 0;
+  }
+}
+
 /* <!-- Testimonials section end here --> */

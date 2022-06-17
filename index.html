@@ -133,7 +133,7 @@
           <i class=" icon fa-solid fa-arrow-right"></i>
         </div>
       </div>
-      <div class="owl-carousel owl-theme">
+      <div class="owl-carousel owl-theme slider">
         <div class="browse-card item">
           <img src="/assets/images/browse1.svg" alt="">
           <button class="browse-btn"><i class="circle fa-solid fa-circle"></i>AVAILABLE NOW</button>
@@ -378,7 +378,7 @@
 <!-- Testimonials section start here -->
     <section class="testimonials">
       <div class="container">
-        <div class="div">
+        <div id="sliders" class="owl-carousel owl-theme">
             <div class="testimonials-content">
               <h6>OUR CUSTOMERS</h6>
               <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet, neque in congue mattis.”</h4>
@@ -414,8 +414,8 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script>
-
-    $('.owl-carousel').owlCarousel({
+$(document).ready(function(){
+    $('.slider').owlCarousel({
       loop: true,
       nav: true,
       navText: ['<i class="icon fa-solid fa-arrow-left"></i>', '<i class="icon fa-solid fa-arrow-right"></i>'],
@@ -431,7 +431,26 @@
         }
       }
 
-    })
+    });
+   
+   $('#sliders').owlCarousel({
+      loop: true,
+      nav: true,
+      dots:true,
+      navText: ['<i', ''],
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+
+    })});
 
   </script>
 </body>
