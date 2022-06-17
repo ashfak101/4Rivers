@@ -71,7 +71,7 @@ body {
   margin: 0 10px;
 }
 .bg-banner {
-  background: url("/assets/images/banner.svg");
+  background: url("/assets/images/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
