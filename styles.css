@@ -22,6 +22,11 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+.common-btn:hover{
+  background: var(--navyblue-color);
+  color: var(--secondary-color);
+  transition: all ease 0.3s;
+}
 .head {
   font-style: normal;
   font-weight: 700;
@@ -107,6 +112,13 @@ body {
   line-height: 33px;
   border: 1px solid var(--main-color);
   margin: 20px 0;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.banner-btn:hover{
+  background: var(--navyblue-color);
+  color: var(--secondary-color);
+  transition: all ease 0.3s;
 }
 .banner-btn i {
   margin-left: 240px;
@@ -455,6 +467,7 @@ body {
     margin: 30px auto;
   }
 }
+
 /* <!-- Tractor buying section ends here --> */
 /* <!-- Our Process Section start here  --> */
 .process {
@@ -577,6 +590,16 @@ body {
     margin-bottom: 50px;
   }
 }
+@media only screen and (max-width: 960px){
+  .process-content  {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px auto; 
+    flex: 1 0 100%;
+  }
+} 
 /* <!-- Our Process Section ends here  --> */
 /* <!-- RESEARCH section start here --> */
 
@@ -763,6 +786,16 @@ body {
     margin-bottom: 10px;
   }
 }
+@media only screen and (max-width: 960px){
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+}
 /* ABout ends Here */
 /* <!-- Testimonials section start here --> */
 .testimonials-content {
@@ -928,6 +961,17 @@ body {
   background: var(--navyblue-color);
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 960px){
+  .start-career {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .start-career-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 665px) {
   .start-career {
     gap: 20px;
@@ -1012,6 +1056,13 @@ body {
   font-size: 14px;
   font-weight: 700;
   margin: 10px 0;
+}
+@media only screen and (max-width: 960px){
+  .latest-content {
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 665px) {
   .latest-title h4 {
