@@ -1303,6 +1303,34 @@ body {
   background: var(--navyblue-color);
   transition: all 0.3s ease;
 }
+.start-career-img {
+  position: relative;
+}
+.start-icon{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  width: 110px;
+  height: 110px;
+  transform: translate(-50%, -50%);
+  background: var(--main-color);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.start-icon:hover{
+ background: var(--navyblue-color);
+  border: 1px solid var(--navyblue-color);
+  transition: all 0.3s ease;
+}
+.start-icon i{
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
 @media only screen and (max-width: 960px) {
   .start-career {
     gap: 20px;
@@ -1349,6 +1377,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.latest-title div{
+  
+  align-items: center;
+
+}
 .latest-title h4 {
   font-size: 44px;
   font-weight: 700;
@@ -1363,7 +1396,7 @@ body {
 .latest-content-div {
   display: flex;
   gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .latest-img h6 {
@@ -1437,11 +1470,11 @@ body {
   padding-bottom: 20px;
   margin-bottom: 10px;
   color: var(--main-color);
-  border-bottom: 0.562px solid var(--main-color);
+  border-bottom: 0.562px solid#cdd1ce;
 }
 .footer-content-navs a {
   display: block;
-  color: var(--main-color);
+  color: #cdd1ce;
   font-weight: 300;
   font-size: 14px;
 }
@@ -1452,9 +1485,9 @@ body {
 }
 .footer-body-content {
   margin: 50px 0;
-  padding: 70px 0;
-  border-top: 1px solid #e0dfde;
-  border-bottom: 1px solid #e0dfde;
+  padding: 46px 0;
+  border-top: 1px solid #cdd1ce;
+  border-bottom: 1px solid #cdd1ce;
 }
 .footer-body-content p {
   font-size: 14px;
@@ -1468,7 +1501,17 @@ body {
   font-weight: 700;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  color: var(--main-color);
+  color: #cdd1ce;
+}
+.footer-info{
+  text-align: right;
+}
+.footer-info p{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 30px 0;
+  color: #e0dfde;
 }
 .footer-footer-content {
   color: var(--main-color);
@@ -1485,7 +1528,7 @@ body {
   font-weight: 400;
   line-height: 24px;
 
-  color: var(--main-color);
+  color: #cdd1ce;
 }
 .social-icons a {
   color: var(--main-color);
@@ -1504,10 +1547,16 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+  .footer-body{
+    flex-direction: column;
+  }
   .footer-footer-content {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+  }
+  .footer-info{
+    text-align: left;
   }
   .footer-footer-content ul {
     flex-direction: column;

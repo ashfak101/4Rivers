@@ -38,8 +38,8 @@
     <div class="container-lg bg-banner">
      
       <nav class="navbar navbar-expand-lg navbar-light bg-sm-light ">
-        <a class="navbar-brand " href="#"><img src="/assets/images/logo.png" alt="" </a>
-          <button class="navbar-toggler  nav-b " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <a class="navbar-brand mr-auto" href="#"><img src="/assets/images/logo.png" alt="" </a>
+          <button class="navbar-toggler ml-4 nav-b " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -436,7 +436,9 @@
       <div class="start-career">
         <div class="start-career-img">
           <img src="/assets/images/career.png" alt="">
+          <div class="start-icon"> <i class="fa-solid fa-play"></i></div>
         </div>
+       
         <div class="start-career-content">
           <h4>Start a John Deere Career with 4Rivers Equipment</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta mauris at finibus mattis. Nulla
@@ -453,8 +455,8 @@
     <div class="container">
       <div class="latest-title">
         <h4>LASTEST FROM 4RIVERS</h4>
-        <div>
-          <button class="common-btn career-btn">VIEW ALL</button>
+        <div >
+          <button class="common-btn career-btn browse-head-btn">VIEW ALL</button>
         </div>
       </div>
       <div class="latest-content">
@@ -480,7 +482,7 @@
           </div>
           <div class="latest-content-div">
             <div>
-              <img src="/assets/images/latest-2.png" alt="">
+              <img src="/assets/images/latest-img-2.png" alt="">
             </div>
             <div class="category">
               <button>CATEGORY</button>
@@ -498,7 +500,7 @@
           </div>
           <div class="latest-content-div">
             <div>
-              <img src="/assets/images/latest-2.png" alt="">
+              <img src="/assets/images/latest-img-2.png" alt="">
             </div>
             <div class="category">
               <button>CATEGORY</button>
@@ -530,21 +532,26 @@
         <div class="footer-content-navs">
           <h4>TECHNOLOGY</h4>
           <a href="#">Technolog</a>
-          <a href="#">Technolog</a>
-          <a href="#">Technolog </a>
+          <a href="#">4Sight Solution</a>
+          <a href="#">Furrow Focus </a>
         </div>
         <div class="footer-content-navs">
           <h4>PARTS & SERVICES</h4>
           <a href="#">Parts & Services</a>
-          <a href="#">Parts & Services</a>
-          <a href="#">Parts & Services</a>
+          <a href="#">Parts </a>
+          <a href="#">Service</a>
         </div>
         <div class="footer-content-navs">
           <h4>COMPANY</h4>
-          <a href="#">About Us</a>
+          <a href="#">Brands</a>
           <a href="#">Careers</a>
-          <a href="#">Blog</a>
+          <a href="#">Dealer Transfer</a>
+          <a href="#">Request</a>
           <a href="#">Events</a>
+          <a href="">Lil Partners Club</a>
+          <a href="">Location</a>
+          <a href="">Podcast</a>
+          <a href="">Sponsorships</a>
 
         </div>
       </div>
@@ -554,9 +561,9 @@
             <h4>CORPORATE OFFICE</h4>
             <p>927 11th Street Greeley,</p>
           </div>
-          <div>
-            <h4>CORPORATE OFFICE</h4>
-            <p>927 11th Street Greeley,</p>
+          <div class="footer-info">
+            <h4>DIRECT EMAIL</h4>
+            <p>INFO@4RIVERSEQUIPMENTS</p>
           </div>
         </div>
 
@@ -593,10 +600,23 @@
   <script>
     function initMap(){
     let location = {lat: -6.9147, lng: 107.6139};
-    let map= new google.maps.Map(document.getElementById('map'),{
-        zoom: 6,
-        center:location
+    map = new google.maps.Map(document.getElementById("map"), {
+    center: new google.maps.LatLng(-33.91722, 151.23064),
+    zoom: 16,
     });
+    const iconBase =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+  const icons = {
+    parking: {
+      icon: iconBase + "parking_lot_maps.png",
+    },
+    library: {
+      icon: iconBase + "library_maps.png",
+    },
+    info: {
+      icon: iconBase + "info-i_maps.png",
+    },
+  };
 }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc&callback=initMap"></script>
