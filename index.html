@@ -107,7 +107,8 @@
               <h5>OUR DEALER NETWORK</h5>
               <a href="#"> View Location</a>
             </div>
-            <img src="/assets/images/map.png" alt="">
+            <!-- <img src="/assets/images/map.png" alt=""> -->
+            <div id="map"></div>
           </div>
         </div>
         <div class=" dealer-network-content col-sm-12 col-md-5 col-lg-3 m-auto">
@@ -142,7 +143,7 @@
           <li ><a class="btn-tab" >GENERAL CONSTRUCTION</a></li>
         </ul>
         <div class="owl-nav-1">
-          <button class="common-btn">VEIW ALL</button>
+          <button class="common-btn browse-head-btn">VEIW ALL</button>
           
         </div>
       </div>
@@ -275,6 +276,7 @@
   <!-- Our Process Section start here  -->
 
   <section class="process">
+    <div class="process-bg"></div>
     <div class="container">
       <div class="process-title-section">
         <div class="process-title-content">
@@ -282,7 +284,7 @@
           <h4>Simple Tractor Buying from <br> 4Rivers Equipment</h4>
         </div>
         <div class="process-button">
-          <button class="common-btn">FIND OUT MORE</button>
+          <button class="common-btn browse-head-btn">FIND OUT MORE</button>
         </div>
       </div>
       <div class="process-content">
@@ -336,10 +338,9 @@
       <div class="research-content">
         <h6>RESEARCH</h6>
         <h4>FIND THE RIGHT <br> MACHINE FOR THE JOB</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic numquam debitis <br> veritatis asperiores
-          blanditiis saepe provident nam eaque praesentium at </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc <br> imperdiet lorem ipsum dolor sit amet.</p>
         <div class="research-button">
-          <button class="common-btn">FIND OUT MORE</button>
+          <button class="res-btn browse-head-btn">FIND OUT MORE</button>
         </div>
       </div>
 
@@ -356,26 +357,20 @@
         <div class="support-card">
           <div><img src="/assets/images/icons/Shape-1.png" alt=""></div>
           <h6>EQUIPMENT PARTS</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam debitis veritatis asperiores
-            blanditiis saepe provident nam eaque praesentium at.am debitis veritatis asperiores blanditiis saepe
-            provident nam eaque praesentium at.</p>
-          <button class="common-btn sup-btn">FIND OUT MORE</button>
+          <p>Moments mean dollars, and getting the right part when you are down is crucial to your success. 4Rivers Equipment’s parts experts can help you get up and running again in no time. Our specialty encompasses a wide range of John Deere products, from heavy equipment parts to farm machinery parts and beyond.</p>
+          <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
         </div>
         <div class="support-card">
           <div><img src="/assets/images/icons/Shape-2.png" alt=""></div>
           <h6>EQUIPMENT PARTS</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam debitis veritatis asperiores
-            blanditiis saepe provident nam eaque praesentium at.am debitis veritatis asperiores blanditiis saepe
-            provident nam eaque praesentium at.</p>
-          <button class="common-btn sup-btn">FIND OUT MORE</button>
+          <p>The expert service professionals at 4Rivers understand that you need to keep your machinery running, whether it’s combines and tractors on the farm, skid steers and dozers on the job site, or lawnmowers and utility vehicles at home. We are here to keep your John Deere equipment running and ensure you can finish the job.</p>
+          <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
         </div>
         <div class="support-card">
           <div><img src="/assets/images/icons/Shape-3.png" alt=""></div>
           <h6>EQUIPMENT PARTS</h6>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam debitis veritatis asperiores
-            blanditiis saepe provident nam eaque praesentium at.am debitis veritatis asperiores blanditiis saepe
-            provident nam eaque praesentium at.</p>
-          <button class="common-btn sup-btn">FIND OUT MORE</button>
+          <p>Technology support from 4Rivers Equipment offers a wide selection of solutions. From integrated construction equipment technology to precision farm technology, we have the tools that will give you the power to get the job done with less. Check out our Technology solutions today.</p>
+          <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
         </div>
       </div>
     </div>
@@ -389,10 +384,8 @@
     <div class="about-content">
       <h6>ABOUT US</h6>
       <h4>It starts with your vision.</h4>
-      <p>The expert service professionals at 4Rivers understand that you need to keep your machinery running, whether
-        it’s combines and tractors on the farm, skid steers and dozers on the job site, or lawnmowers and utility
-        vehicles at home. We are here to keep your John Deere equipment running and ensure you can finish the job.</p>
-      <button class="common-btn">CLICK ME</button>
+      <p>The expert service professionals at 4Rivers understand that you need to keep your machinery running, whether it’s combines and tractors on the farm, skid steers and dozers on the job site, or lawnmowers and utility vehicles at home. We are here to keep your John Deere equipment running and ensure you can finish the job.</p>
+      <button class="common-btn btn-deal">CLICK ME</button>
     </div>
   </section>
   <!-- ABOUT US ENDS HERE -->
@@ -449,7 +442,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta mauris at finibus mattis. Nulla
             facilisi. Pellentesque ac tellus nulla. Nulla facilisi. Sed viverra commodo erat, ut laoreet tellus
             hendrerit vitae.</p>
-          <button class="common-btn career-btn">FIND OUT MORE</button>
+          <button class="common-btn career-btn browse-head-btn">FIND OUT MORE</button>
         </div>
       </div>
     </div>
@@ -597,6 +590,16 @@
     crossorigin="anonymous"></script>
   
   <script src="main.js"></script>
+  <script>
+    function initMap(){
+    let location = {lat: -6.9147, lng: 107.6139};
+    let map= new google.maps.Map(document.getElementById('map'),{
+        zoom: 6,
+        center:location
+    });
+}
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc&callback=initMap"></script>
 </body>
 
 </html>
