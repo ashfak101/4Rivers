@@ -33,12 +33,12 @@
   <header>
     <!-- header head -->
     <div class="header-head">
-      <p>A trusted seller | Equipment in stock and ready to work View all</p>
+      <p>A trusted seller | Equipment in stock and ready to work <a href="#">View all</a></p>
     </div>
     <div class="container-lg bg-banner">
      
       <nav class="navbar navbar-expand-lg navbar-light bg-sm-light ">
-        <a class="navbar-brand mr-auto" href="#"><img src="/assets/images/logo.png" alt="" </a>
+        <a class="navbar-brand mr-auto" href="#"><img src="/assets/images/logo.png" alt="" /> </a>
           <button class="navbar-toggler ml-4 nav-b " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
                 <a class="nav-link active" href="#">RESEARCH <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
+                <a class="nav-link" href="#">SHOP <img src="/assets/images/path.svg" alt=""></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">SUPPORTING SERVICE</a>
@@ -79,18 +79,15 @@
           <p>
             NEW & USED EQUIPMENT. PARTS. SERVICE. TECHNOLOGY.</p>
           
-          <select class=" banner-btn">
-            <option value="" disabled selected>Select industry type</option>
-            <option value="1">Art & Crafts</option>
-            <option value="2">IT Development</option>
-            <option value="3">Graphic Design</option>
-            <option value="4">Web Development</option>
-            <option value="5">Android</option>
-            <option value="6">Software</option>
-            <option value="7">Management</option>
-            <option value="8">Android</option>
-            <option value="9">Software</option>
-            </select>
+         
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn banner-btn"">Select industry type <i class="fa-solid fa-angle-down"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Graphic Design</a>
+                <a href="#about">About</a>
+                <a href="#contact">Management</a>
+              </div>
+            </div>
         </div>
       </section>
     </div>
@@ -135,7 +132,7 @@
   <section class="browse">
     <div class="container">
       <div class="browse-head">
-        <h4 class="head">BROWSE</h4>
+        <h4 class="head">BROWSE <span>(23)</span></h4>
         <ul>
           <li ><a class="btn-tab">TRACTORS</a></li>
           <li ><a class="btn-tab" >HOME AND RANCH</a></li>
@@ -152,7 +149,7 @@
           <img src="/assets/images/browse1.png" alt="">
           <button class="browse-btn"><i class="circle fa-solid fa-circle"></i>AVAILABLE NOW</button>
           <div class="browse-content">
-            <h6>JOHN</h6>
+            <h6>JOHN DEERE</h6>
             <div class="browse-loader">
               <h4>1023+LOADER</h4>
               <h4>$2680</h4>
@@ -173,7 +170,7 @@
           <img src="/assets/images/browse-img.png" alt="">
           <button class="browse-btn"><i class="circle-2 fa-solid fa-circle"></i>AVAILABLE NOW</button>
           <div class="browse-content">
-            <h6>JOHN</h6>
+            <h6>JOHN DEERE</h6>
             <div class="browse-loader">
               <h4>1023+LOADER</h4>
               <h4>$2680</h4>
@@ -194,7 +191,7 @@
           <img src="/assets/images/browse3.png" alt="">
           <button class="browse-btn"><i class="circle fa-solid fa-circle"></i>AVAILABLE NOW</button>
           <div class="browse-content">
-            <h6>JOHN</h6>
+            <h6>JOHN DEERE</h6>
             <div class="browse-loader">
               <h4>1023+LOADER</h4>
               <h4>$2680</h4>
@@ -215,7 +212,7 @@
           <img src="/assets/images/browse4.png" alt="">
           <button class="browse-btn"><i class="circle-2 fa-solid fa-circle"></i>AVAILABLE NOW</button>
           <div class="browse-content">
-            <h6>JOHN</h6>
+            <h6>JOHN DEERE</h6>
             <div class="browse-loader">
               <h4>1023+LOADER</h4>
               <h4>$2680</h4>
@@ -334,6 +331,7 @@
   <!-- Our Process Section ends here  -->
   <!-- RESEARCH section start here -->
   <section class="research">
+ 
     <div class="container">
       <div class="research-content">
         <h6>RESEARCH</h6>
@@ -355,19 +353,19 @@
       </div>
       <div class="support-content">
         <div class="support-card">
-          <div><img src="/assets/images/icons/Shape-1.png" alt=""></div>
+          <div><img src="/assets/images/support-icon/Shape.svg" alt=""></div>
           <h6>EQUIPMENT PARTS</h6>
           <p>Moments mean dollars, and getting the right part when you are down is crucial to your success. 4Rivers Equipment’s parts experts can help you get up and running again in no time. Our specialty encompasses a wide range of John Deere products, from heavy equipment parts to farm machinery parts and beyond.</p>
           <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
         </div>
         <div class="support-card">
-          <div><img src="/assets/images/icons/Shape-2.png" alt=""></div>
+          <div><img src="/assets/images/support-icon/Shape-1.svg" alt=""></div>
           <h6>EQUIPMENT PARTS</h6>
           <p>The expert service professionals at 4Rivers understand that you need to keep your machinery running, whether it’s combines and tractors on the farm, skid steers and dozers on the job site, or lawnmowers and utility vehicles at home. We are here to keep your John Deere equipment running and ensure you can finish the job.</p>
           <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
         </div>
         <div class="support-card">
-          <div><img src="/assets/images/icons/Shape-3.png" alt=""></div>
+          <div><img src="/assets/images/support-icon/Shape-2.svg" alt="" class="sup-img"></div>
           <h6>EQUIPMENT PARTS</h6>
           <p>Technology support from 4Rivers Equipment offers a wide selection of solutions. From integrated construction equipment technology to precision farm technology, we have the tools that will give you the power to get the job done with less. Check out our Technology solutions today.</p>
           <button class="common-btn sup-btn browse-head-btn">FIND OUT MORE</button>
@@ -516,6 +514,7 @@
   <!-- latest section end-here -->
   <!-- Footer start here -->
   <section class="footer">
+
     <div class="container">
       <div class="footer-head-content">
         <div>
@@ -598,28 +597,9 @@
   
   <script src="main.js"></script>
   <script>
-    function initMap(){
-    let location = {lat: -6.9147, lng: 107.6139};
-    map = new google.maps.Map(document.getElementById("map"), {
-    center: new google.maps.LatLng(-33.91722, 151.23064),
-    zoom: 16,
-    });
-    const iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
-  const icons = {
-    parking: {
-      icon: iconBase + "parking_lot_maps.png",
-    },
-    library: {
-      icon: iconBase + "library_maps.png",
-    },
-    info: {
-      icon: iconBase + "info-i_maps.png",
-    },
-  };
-}
+    
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc&callback=initMap"></script>
+  <script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc&callback=initMap&v=weekly" defer></script>
 </body>
 
 </html>
