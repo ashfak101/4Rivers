@@ -30,7 +30,7 @@
 
 <body>
   <!-- header start here -->
-  <header>
+  <header class="header">
     <!-- header head -->
     <div class="header-head">
       <p>A trusted seller | Equipment in stock and ready to work <a href="#">View all</a></p>
@@ -38,7 +38,7 @@
     <div class="container-lg bg-banner">
      
       <nav class="navbar navbar-expand-lg navbar-light bg-sm-light ">
-        <a class="navbar-brand mr-auto" href="#"><img src="/assets/images/logo.png" alt="" /> </a>
+        <a class="navbar-brand mr-auto" href="#"><img class="logo-img" src="/assets/images/logo.png" alt="" /> </a>
           <button class="navbar-toggler ml-4 nav-b " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,13 +80,26 @@
             NEW & USED EQUIPMENT. PARTS. SERVICE. TECHNOLOGY.</p>
           
          
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn banner-btn"">Select industry type <i class="fa-solid fa-angle-down"></i></button>
+            <div class="dr">
+              <select class="banner-btn-select ">
+								<option value="" disabled selected>Select industry type </option>
+								<option value="1">Art & Crafts</option>
+								<option value="2">IT Development</option>
+								<option value="3">Graphic Design</option>
+								<option value="4">Web Development</option>
+								<option value="5">Android</option>
+								<option value="6">Software</option>
+								<option value="7">Management</option>
+								<option value="8">Android</option>
+								<option value="9">Software</option>
+							  </select>
+                <span class="drpdwn-icon"><i class="fa-solid fa-angle-down "></i></span>
+              <!-- <button onclick="myFunction()" class="dropbtn banner-btn"">Select industry type <i class="fa-solid fa-angle-down"></i></button>
               <div id="myDropdown" class="dropdown-content">
                 <a href="#home">Graphic Design</a>
                 <a href="#about">About</a>
                 <a href="#contact">Management</a>
-              </div>
+              </div> -->
             </div>
         </div>
       </section>
@@ -98,8 +111,8 @@
   <section class="dealer-network">
     <div class="container">
       <div class="row">
-        <div class=" dealer-network-content  col-sm-12 col-md-5 col-lg-3 m-auto  ">
-          <div class="dealer-network-content-1">
+        <div class="  col-sm-12 col-md-6 col-lg-4   ">
+          <div class="dealer-network-content  dealer-network-content-1">
             <div>
               <h5>OUR DEALER NETWORK</h5>
               <a href="#"> View Location</a>
@@ -108,16 +121,16 @@
             <div id="map"></div>
           </div>
         </div>
-        <div class=" dealer-network-content col-sm-12 col-md-5 col-lg-3 m-auto">
-          <div class="dealer-network-content-2">
+        <div class="  col-sm-12 col-md-6 col-lg-4 ">
+          <div class="  dealer-network-content-2 dealer-network-content">
             <img src="/assets/images/noun-map-1285397.png" alt="">
             <h5>We Transfer Equipment to any 4Rivers Location</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <button class="common-btn btn-deal">Search All Locations</button>
           </div>
         </div>
-        <div class=" dealer-network-content col-sm-12 col-md-6 col-lg-3 m-auto">
-          <div class="dealer-network-content-3">
+        <div class="  col-sm-12 col-md-6 col-lg-4 ">
+          <div class="dealer-network-content  dealer-network-content-3">
             <h5>BUYING FROM US</h5>
             <p><img src="/assets/images/dealer-icon/dealer1.svg" alt=""> Lorem ipsum dolor sit amet.</p>
             <p><img src="/assets/images/dealer-icon/dealer2.svg" alt=""> Lorem ipsum dolor sit amet.</p>
@@ -168,7 +181,7 @@
 
         <div class="browse-card item">
           <img src="/assets/images/browse-img.png" alt="">
-          <button class="browse-btn"><i class="circle-2 fa-solid fa-circle"></i>AVAILABLE NOW</button>
+          <button class="browse-btn"><i class="circle-2 fa-solid fa-circle"></i>PRE-ORDER</button>
           <div class="browse-content">
             <h6>JOHN DEERE</h6>
             <div class="browse-loader">
@@ -338,7 +351,7 @@
         <h4>FIND THE RIGHT <br> MACHINE FOR THE JOB</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc <br> imperdiet lorem ipsum dolor sit amet.</p>
         <div class="research-button">
-          <button class="res-btn browse-head-btn">FIND OUT MORE</button>
+          <button class="res-btn browse-head-btn px-4">CLICK HERE</button>
         </div>
       </div>
 
@@ -376,15 +389,22 @@
   <!-- SUPPORTING-SERVICES ends here -->
   <!-- ABOUT US START HERE -->
   <section class="about">
+ <div class="row">
+  <div class="col-sm-12 col-md-6">
     <div class="about-img">
-      <img src="/assets/images/about.png" alt="">
+      <img class="" src="/assets/images/about.png" alt="">
     </div>
+  </div>
+  <div class="col-sm-12 col-md-6 p-0">
     <div class="about-content">
       <h6>ABOUT US</h6>
       <h4>It starts with your vision.</h4>
       <p>The expert service professionals at 4Rivers understand that you need to keep your machinery running, whether it’s combines and tractors on the farm, skid steers and dozers on the job site, or lawnmowers and utility vehicles at home. We are here to keep your John Deere equipment running and ensure you can finish the job.</p>
       <button class="common-btn btn-deal">CLICK ME</button>
     </div>
+  </div>
+ </div>
+    
   </section>
   <!-- ABOUT US ENDS HERE -->
 
@@ -442,7 +462,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta mauris at finibus mattis. Nulla
             facilisi. Pellentesque ac tellus nulla. Nulla facilisi. Sed viverra commodo erat, ut laoreet tellus
             hendrerit vitae.</p>
-          <button class="common-btn career-btn browse-head-btn">FIND OUT MORE</button>
+          <button class="common-btn career-btn browse-head-btn px-5">FIND OUT MORE</button>
         </div>
       </div>
     </div>
@@ -454,7 +474,7 @@
       <div class="latest-title">
         <h4>LASTEST FROM 4RIVERS</h4>
         <div >
-          <button class="common-btn career-btn browse-head-btn">VIEW ALL</button>
+          <button class="common-btn career-btn browse-head-btn px-5">VIEW ALL</button>
         </div>
       </div>
       <div class="latest-content">
@@ -596,10 +616,12 @@
     crossorigin="anonymous"></script>
   
   <script src="main.js"></script>
-  <script>
-    
-  </script>
-  <script async  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc&callback=initMap&v=weekly" defer></script>
+  
+  <!-- <script async  src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script> -->
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB683IGY_W3VaaPmGXA2rGAUKZYVyvsfbA&callback=initMap"
+  defer
+></script>
 </body>
 
 </html>

@@ -51,7 +51,7 @@ for(let i=0 ; i<tab.length; i++){
         for(let i=0 ; i<tab.length; i++){
             tab[i].style.borderBottom ='none';
         }
-        this.style.borderBottom ='5px solid #091c30';
+        this.style.borderBottom ='3px solid #091c30';
     })
 }
 // AIzaSyBLuzFkjarSlEaeYH-wU2sEryGrFcI4iZc
@@ -79,16 +79,16 @@ function initMap() {
   });
 
   const iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+    "/assets/images/icons/";
   const icons = {
     parking: {
-      icon: iconBase + "parking_lot_maps.png",
+      icon: iconBase + "Shape-2.png",
     },
     library: {
-      icon: iconBase + "library_maps.png",
+      icon: iconBase + "Shape-2.png",
     },
     info: {
-      icon: iconBase + "info-i_maps.png",
+      icon: iconBase + "Shape-2.png",
     },
   };
   const features = [

@@ -8,10 +8,14 @@
   --navyblue-color: #091c30;
 }
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo';
   margin: 0;
   padding: 0;
+  /* background: #F2F2F2; */
   box-sizing: border-box;
+}
+p{
+  margin-bottom: 0;
 }
 /* common style */
 .common-btn {
@@ -39,8 +43,11 @@ body {
 }
 /* header css */
 /* header-head */
+.header{
+  position: relative;
+}
 .header-head {
-  height: 31px;
+  
   background-color: var(--warning-color);
   text-align: center;
 }
@@ -58,7 +65,7 @@ body {
 }
 /* header nav */
 .header-nav {
-  margin: 10px 0;
+ 
   align-items: center;
 }
 .header-nav ul {
@@ -139,7 +146,7 @@ body {
 .banner {
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 .banner-content {
@@ -163,7 +170,7 @@ body {
 .banner-btn {
   color: var(--main-color);
   background: transparent;
-  width: 420px;
+  /* width: 420px; */
   padding: 12px 20px;
   text-align: left;
   font-weight: 500;
@@ -174,24 +181,75 @@ body {
   margin-bottom: 4px;
   transition: all ease 0.3s;
   cursor: pointer;
+  appearance: none;
+  position: relative;
 }
-.banner-btn:hover {
+.banner-btn-select:hover {
   background: var(--navyblue-color);
   color: var(--secondary-color);
   transition: all ease 0.3s;
 }
+
+.banner-btn-select {
+  padding: 10px 31px;
+  padding-right: 225px;
+  font-size: 13px;
+  margin-top: 20px;
+  appearance: none;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+}
 .banner-btn i {
   margin-left: 230px;
 }
+.drpdwn-icon {
+  position: absolute;
+  color: #fff;
+  /* left: 0; */
+  right: 100px;
+  top: 84%;
+  font-size: 11px;
+}
 .banner-content option {
   background-color: #091c30;
+  
 }
 @media only screen and (max-width: 665px) {
+  .logo-img{
+    width: 159px;
+  }
+  .banner-btn-select{
+    padding-right:38px ;
+    appearance: auto;
+  }
+
+.drpdwn-icon {
+  position: absolute;
+    color: #fff;
+    display: none;
+    /* left: 0; */
+    right: 100%;
+    top: 79%;
+    font-size: 11px;
+}
+  .bg-banner{
+    height: 530px;
+  }
+  .bg-banner::before {
+    height: 530px;
+  }
   .banner {
-    top: 50%;
+    top: 25%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+  }
+  .header-nav-side span {
+    border: none;
   }
   .banner-content h4 {
-    font-size: 26px;
+    font-size: 32px;
     font-family: 'Bebas Neue';
     line-height: 28px;
   }
@@ -214,7 +272,11 @@ body {
     z-index: 10;
     width: 100%;
     border-radius: 20px;
-    height: 40vh;
+   
+  }
+  .header-nav-side{
+    display: flex;
+    flex-direction: column;
   }
 }
 .dropbtn {
@@ -249,8 +311,8 @@ body {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
-  font-size: 13px;
+  padding: 10px 16px;
+  font-size: 12px;
   text-decoration: none;
   display: block;
   z-index: 10;
@@ -261,7 +323,7 @@ body {
 .show {display: block; z-index: 1000;}
 @media only screen and (min-width: 768px)  and (max-width: 960px){
   .banner {
-    top:35%
+    top:25%
   }
   .navbar-toggler{
     margin-left: 320px !important;
@@ -279,14 +341,14 @@ body {
     justify-content: center;
     background-color: #091c30;
     width: 100%;
-    top: 230%;
+    top: 300%;
     right: 1px;
     z-index: 99;
     text-align: center;
     margin: 0 auto;
   }
 }
-/* Dealer NetWorl */
+/* Dealer NetWork */
 .lg-container {
   width: 70%;
   margin: 0 auto;
@@ -296,7 +358,7 @@ body {
   z-index: -1;
 }
 .dealer-network-content {
-  width: 334.03px;
+  width: 100%;
   background: var(--main-color);
   height: 310px;
   box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.0991348);
@@ -311,9 +373,7 @@ body {
 .dealer-network-content:hover{
   transform: translateY(-1%);
 }
-.dealer-network-content:nth-child(2) {
-  background-color: #091c30;
-}
+
 .dealer-network-content:last-child {
   margin-right: 20px;
 }
@@ -340,22 +400,22 @@ body {
 }
 .dealer-network-content-2 {
   text-align: center;
+  background-color: #091c30;
   margin-bottom: 20px;
 }
-.row{
-  gap: 20px;
-}
+
 .dealer-network-content-2 img {
   margin: 20px 0;
 }
 .dealer-network-content-2 h5 {
   color: var(--main-color);
   font-size: 17px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .dealer-network-content-2 p {
   color: var(--main-color);
   font-size: 13px;
+  margin-bottom: 10px;
 }
 .dealer-network-content-3 p {
   font-size: 14px;
@@ -369,7 +429,10 @@ body {
   height: 200px;
   width: 100%;
 }
-
+.gmnoprint div{
+  display: flex;
+  flex-direction: column;
+}
 
 .dealer-network-content-3 p img {
   margin-right: 20px;
@@ -411,14 +474,20 @@ body {
 .btn-deal:focus::before {
   transform: scaleX(1);
 }
+
 @media only screen and (max-width: 665px) {
   /* .dealer-network{
 
     } */
+    .dealer-network {
+      margin-top: -140px;
+      z-index: -1;
+    }
   .dealer-network-content {
-    width: 90%;
-    margin: 10px auto !important;
+    width: 100%;
+
     margin-right: 0;
+    margin-left: 10px !important;
     margin-bottom: 50px;
   }
   .lg-container {
@@ -463,6 +532,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }
 .browse-head ul li a {
   text-decoration: none;
@@ -471,12 +541,12 @@ body {
   font-size: 18px;
   margin: 0 10px;
   cursor: pointer;
-  border-bottom: 5px solid transparent;
+  border-bottom: 3px solid transparent;
   transition: border 0.3s ease-in-out;
 }
 .browse-head ul li a:hover{
   color: var(--primary-color);
-  border-bottom: 5px solid var(--navyblue-color);
+  border-bottom: 3px solid var(--navyblue-color);
 }
 .browse-head-btn{
   position: relative;
@@ -597,7 +667,7 @@ body {
 @media only screen and (max-width: 665px) {
   .browse-head {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     align-items: flex-start;
     margin-bottom: 30px;
   }
@@ -609,7 +679,7 @@ body {
   .browse-head h4 {
     font-size: 30px;
     line-height: 40px;
-    margin-left: 120px;
+   
   }
   .browse-head ul{
     align-items: flex-start;
@@ -618,12 +688,14 @@ body {
     font-size: 8px;
   }
   .browse-head ul {
-    /* flex-direction: column; */
+    
+    align-items: center;
+   justify-content: space-evenly;
     margin-left: 0;
   }
   .browse-head div button {
     margin-right: 0;
-    margin-left: 60px;
+    
   }
   .browse-card {
     width: 100% !important;
@@ -659,9 +731,11 @@ body {
 .browse-card {
   width: 255.24px;
   height: 352px;
-
+  background: #FFFFFF;
   margin-bottom: 35px;
   margin-right: 20px;
+  box-shadow: 0px 26px 35px rgba(0, 0, 0, 0.0680999);
+
 }
 .browse-card img {
   width: 100%;
@@ -670,6 +744,7 @@ body {
 .browse-content h6 {
   font-size: 13px;
   font-family: 'Bebas Neue';
+  font-weight: 700;
   padding: 0 10px;
   margin: 10px 0;
 }
@@ -696,18 +771,20 @@ body {
   color: var(--primary-color);
 }
 .browse-content p {
-  font-size: 13px;
+  font-size: 10px;
+  font-family: "Heebo";
   color: var(--primary-color);
   font-weight: 500;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 .browse-footer {
   display: flex;
   background-color: var(--navyblue-color);
   color: var(--main-color);
   justify-content: space-between;
-
-  padding: 10px 10px;
+  padding-top:10px !important ;
+  padding: 0px 10px;
 }
 .browse-footer h5 {
   font-size: 11.7925px;
@@ -810,6 +887,9 @@ body {
   font-weight: 400;
 }
 @media only screen and (max-width: 665px) {
+  .tractors-buying-section{
+    padding: 50px 20px;
+  }
   .tractors-content h4 {
     font-size: 24px;
     line-height: 40px;
@@ -906,7 +986,7 @@ body {
 .process-card h6 {
   position: absolute;
   font-family: 'Bebas Neue';
-  font-size: 19px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--main-color);
   margin-bottom: 10px;
@@ -935,41 +1015,49 @@ body {
   /* transition:  0.5s ease-in-out; */
 }
 .process-card-item h5 {
-  font-size: 19px;
+  font-size: 24px;
   font-weight: 700;
   font-family: 'Bebas Neue';
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .process-card-item p {
-  font-size: 15px;
-  font-weight: 400;
-  padding: 10px 0;
+  font-family: 'Heebo';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+margin-bottom: 10px;
   color: #FFFFFF;
 }
 .process-card-item i {
   color: var(--secondary-color);
   font-size: 19px;
   padding: 12px 16px;
-
-  width: 47px;
-  height: 47px;
   border: 1px solid var(--main-color);
   border-radius: 50%;
+  /* height: 47px;
+  width: 47px; */
   z-index: 1;
   transition: color 0.5s ease-in-out;
 }
 .process-card-item i:hover {
   color: var(--main-color);
-  font-size: 19px;
-  padding: 12px 16px;
+  
+  /* padding: 12px 16px; */
 
-  width: 47px;
-  height: 47px;
-  border: 1px solid var(--main-color);
+  
+  border: 1px solid var(--secondary-color);
   border-radius: 50%;
   z-index: 1;
 }
 @media only screen and (max-width: 665px) {
+  .process{
+    padding: 50px 0px;
+  }
+ 
+  .process-card img{
+    width: 100%;
+  }
   .process-title-content h4 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -1016,7 +1104,7 @@ body {
 }
 
 .research-content {
-  padding: 150px 0;
+  padding: 115px 0;
   z-index: 1;
   color: var(--main-color);
 }
@@ -1166,6 +1254,10 @@ body {
 }
 
 @media only screen and (max-width: 665px) {
+  .supportting-services {
+    margin: 50px 0;
+}
+  .support-card{width: 100%;}
   .support-title h4 {
     font-size: 30px;
     margin-bottom: 10px;
@@ -1180,20 +1272,23 @@ body {
 /* <!-- SUPPORTING-SERVICES ends here --> */
 /* ABout start Here */
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
+  
   padding: 0 100px;
   margin-bottom: 150px;
+}
+.about-img img {
+  width: 103%;
+  height: 563px;
+  object-fit: cover;
 }
 
 .about-content {
  
   margin-top: 90px;
-  height: 566px;
+  height: 536px;
   background: var(--navyblue-color);
   color: var(--main-color);
-  padding: 100px;
+  padding: 80px;
 }
 .about-content h6 {
   font-size: 19px;
@@ -1211,8 +1306,8 @@ body {
 .about-content p {
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
-  margin: 30px 0;
+  line-height: 25px;
+  margin: 25px 0;
 }
 
 @media only screen and (max-width: 665px) {
@@ -1220,14 +1315,15 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 0px;
+    margin-bottom: 20px;
   }
   .about-img img {
     width: 100%;
   }
   .about-content {
-    padding: 50px;
+    padding: 56px 21px;
     margin-top: 0;
-  }
+}
   .about-content h4 {
     font-size: 34px;
     font-family: 'Bebas Neue';
@@ -1364,7 +1460,8 @@ body {
   }
   .careers-section::before {
     left: 0;
-    width: 168%;
+    width: 183%;
+    height: 106%;
   }
   .careers-content {
     margin: 150px 0;
@@ -1462,6 +1559,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .start-career-section {
+    margin: 50px 0;
+}
   .start-career-content {
     margin: 0;
   }
@@ -1479,6 +1579,10 @@ body {
     width: 100%;
     height: 100%;
   }
+  .start-icon{
+    width: 70px;
+    height: 70px;
+  }
 }
 
 /* <!-- Careers Section ends here --> */
@@ -1490,6 +1594,7 @@ body {
 .latest-title {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .latest-title div{
   
@@ -1564,9 +1669,17 @@ body {
   }
 }
 @media only screen and (max-width: 665px) {
+  .latest-section{
+    padding: 20px 0;
+  }
+  .latest-title{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px ;
+  }
   .latest-title h4 {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .latest-img img {
     width: 100%;
@@ -1679,6 +1792,19 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+  .footer-body-content {
+    margin: 30px 0;
+    padding: 23px 0;
+    border-top: 1px solid #cdd1ce;
+    border-bottom: 1px solid #cdd1ce;
+}
+.footer-body-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 13px 0;
+  color: #e0dfde;
+}
   .footer-body{
     flex-direction: column;
   }
